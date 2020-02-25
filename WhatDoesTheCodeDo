@@ -1,0 +1,26 @@
+1.
+
+Overordnet starter koden en web api bygget på falcon biblotekket.
+
+Først sætter den cross-origin resource sharing til.
+
+herefter definere den selve app classen. App klassen nedarver fra Falcon.API og kalder superens konstruktor.
+Herefter tilføjer den en error handler defineret i app pakken. og tilføjer den eneste route i api'en /v1/mail.
+
+Herefter initializerer den appen og starter serveren på localhost på port 5000.
+
+
+2.
+Initialiseringen af et customer table i en sql database med brug af sqlalchemy.
+
+Definerer tablename, samt alle columns der skal være i tables customer. Der bliver også defineret hvilke columns der må
+opdateres og hvilke der skal være der når man laver en customer row.
+
+Herefter følger en masse class methods, til at operere på dataerne.
+
+i konstruktoren initialisers de første values ved hjælp af en givet dictionary.
+
+Herefter kan man frit kalde update for at opdaterer værdier der godt må ændres efter initialisering.
+
+Herefter laves der et dictionary med alle columns i tablet. Dette initialiseres med nogle standard værdier fundet i BASE
+klassen.
